@@ -62,15 +62,15 @@
         const flower = document.createElement("div");
         flower.className = "flower";
 
-        flower.style.top = ${Math.random() * window.innerHeight}px;
-        flower.style.left = ${Math.random() * window.innerWidth}px;
+        flower.style.top = `${Math.random() * window.innerHeight}px`;
+        flower.style.left = `${Math.random() * window.innerWidth}px`;
 
-        flower.style.animationDelay = ${Math.random() * 5}s;
+        flower.style.animationDelay = `${Math.random() * 5}s`;
 
         for (let i = 0; i < 12; i++) {
           const petal = document.createElement("div");
           petal.className = "petal";
-          petal.style.transform = rotate(${i * 30}deg) translateY(-20px);
+          petal.style.transform = `rotate(${i * 30}deg) translateY(-20px)`;
           flower.appendChild(petal);
         }
 
